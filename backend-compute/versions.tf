@@ -1,5 +1,4 @@
 terraform {
-  required_version = ">= 1.16"
 
   required_providers {
     aws = {
@@ -10,12 +9,11 @@ terraform {
 
   # Connect to your HCP Terraform Organization and specific workspace
   cloud {
-    organization = "waiaung"
+    organization = "nyein-hello-cloud"
 
     workspaces {
       name = "backend-compute-ws" # Match this to the exact workspace name for each folder!
     }
   }
 }
-
 

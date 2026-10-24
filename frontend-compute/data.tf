@@ -8,7 +8,7 @@ data "terraform_remote_state" "network" {
   #   path = "${path.module}/../frontend-network/terraform.tfstate"
   # }
   config = {
-    organization = "waiaung"
+    organization = "nyein-hello-cloud"
     workspaces = {
       name = "frontend-network-ws"
     }
@@ -24,7 +24,7 @@ data "terraform_remote_state" "security" {
   # }
 
   config = {
-    organization = "waiaung"
+    organization = "nyein-hello-cloud"
     workspaces = {
       name = "frontend-security-ws"
     }

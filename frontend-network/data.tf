@@ -6,7 +6,7 @@ data "terraform_remote_state" "backend_network" {
   #   path = "${path.module}/../backend-network/terraform.tfstate"
   # }
   config = {
-    organization = "waiaung"
+    organization = "nyein-hello-cloud"
     workspaces = {
       name = "backend-network-ws"
     }
