@@ -19,7 +19,7 @@ variable "backend_prefix" {
 
 variable "backend_environment" {
   description = "The environment for the backend resources."
-  default     = "dev"
+  default     = "dev-vcs-test"
 }
 
 variable "backend_public_subnet_cidr" {
