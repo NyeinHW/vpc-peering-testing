@@ -115,18 +115,6 @@ resource "aws_route_table" "backend_private_rtb01" {
     Name = "${var.backend_prefix}-private-rtb01"
   }
 }
-resource "aws_route_table" "backend_private_rtb05" {
-  vpc_id = aws_vpc.backend_vpc.id
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_nat_gateway.backend_ngw.id
-  }
-
-  tags = {
-    Name = "${var.backend_prefix}-private-rtb05"
-  }
-}
 
 resource "aws_route_table" "backend_private_rtb06" {
   vpc_id = aws_vpc.backend_vpc.id
